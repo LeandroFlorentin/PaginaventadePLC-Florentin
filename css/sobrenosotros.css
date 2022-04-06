@@ -30,6 +30,7 @@ footer {
   border-bottom: 2px solid #0c86f0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 body {
   background: #ffffff;
@@ -38,6 +39,7 @@ ul {
   list-style: none;
   display: inline-block;
   height: 50px;
+  width: 200px;
 }
 ul:hover {
   box-shadow: 1px 2px 5px 0 #000000;
@@ -45,23 +47,29 @@ ul:hover {
 .botonsito {
   height: 50px;
   width: 50px;
-  margin-top: 30px;
   margin-left: 10px;
+  animation-name: efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.8s;
+  animation-delay: 0;
 }
 ul li {
   position: relative;
-  width: 200px;
+  width: 50px;
+  height: 50px;
 }
 ul li ul {
   position: absolute;
   background: #000000;
-  width: 100%;
+  width: 400%;
   height: 400px;
-  text-align: center;
+  display: flex;
   display: none;
 }
 ul li ul li {
   border-top: 1px solid #000000;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,12 +77,18 @@ ul li ul li {
 ul li ul li a {
   color: #cccccc;
   text-decoration: none;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
 }
 ul li ul li:hover {
   background: #222222;
   box-shadow: 1px 2px 5px 0 #333333;
 }
-ul li:hover ul {
+ul li:hover ul{
   display: block;
 }
 ul li:hover ul li {
@@ -85,6 +99,43 @@ ul li:hover ul li {
   flex-direction: column;
   align-items: center;
   width: 20%;
+  animation-name: efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.8s;
+  animation-delay: 0;
+}
+@keyframes efecto{
+0%{
+  transform: scale(0.1)
+}
+11%{
+  transform: scale(0.2)
+}
+22%{
+  transform: scale(0.3)
+}
+33%{
+  transform: scale(0.4)
+}
+44%{
+  transform: scale(0.5)
+}
+55%{
+  transform: scale(0.6)
+}
+66%{
+  transform: scale(0.7)
+}
+77%{
+  transform: scale(0.8)
+}
+88%{
+  transform: scale(0.9)
+}
+100%{
+  transform: scale(1)
+}
 }
 #logo {
   width: 60px;
@@ -94,7 +145,6 @@ ul li:hover ul li {
 .header__titulo {
   display: inline-block;
   font-size: 40px;
-  display: flex;
   background: linear-gradient(to bottom, #48f091, #0c86f0);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -104,13 +154,17 @@ ul li:hover ul li {
   width: 200px;
   display: flex;
   justify-content: right;
+  margin-right: 10px;
 }
 .navegador__text {
   display: inline-block;
+  animation-name: efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.8s;
+  animation-delay: 0;
 }
 .navegador__text img {
-  margin-top: 30px;
-  margin-right: 10px;
   width: 50px;
   height: 50px;
 }
