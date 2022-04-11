@@ -24,6 +24,15 @@ footer {
 .d-block{
   height: 300px;
 }
+.ancho{
+  width: 90%;
+  margin: auto;
+}
+.w-100{
+  border: 1px solid #000000;
+  border-radius: 50px;
+  box-shadow: 1px 2px 5px 0 #000;
+}
 #grilla {
   display: grid;
   grid-template-areas:
@@ -33,7 +42,7 @@ footer {
     "carro carro carro"
     "footer footer footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 10% 45% 35% 1fr;
+  grid-template-rows: 1fr 10% 30% 35% 1fr;
 }
 .header {
   background: #000000;
@@ -250,6 +259,23 @@ ul li:hover ul li {
 .pie {
   background: #000000;
   border-top: 2px solid #0c86f0;
+  width: 100wh;
+}
+.pie__h1{
+  text-align: center;
+  background: linear-gradient(to bottom, #48f091, #0c86f0);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding-top: 10px;
+  font-size: 25px;
+}
+.pie__p2{
+  text-align: center;
+  background: linear-gradient(to bottom, #48f091, #0c86f0);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding-top: 10px;
+  font-size: 18px;
 }
 .pie__p {
   text-align: center;
@@ -259,29 +285,31 @@ ul li:hover ul li {
   padding-top: 10px;
   font-size: 18px;
 }
-.pie a img {
+.texto_pie{
+  display: block
+}
+.contacto{
+  display: block;
+  width: 100%;
+  float: right;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.redes__img {
   padding-top: 10px;
   width: 40px;
   height: 40px;
 }
-.redes {
-  display: flex;
-  justify-content: space-around;
-}
 @media (max-width: 1024px){
   #grilla {
-    display: grid;
-    grid-template-areas:
-      "header header header"
-      "titulo titulo titulo"
-      "completar completar completar"
-      "carro carro carro"
-      "footer footer footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 10% 35% 35% 1fr;
+    grid-template-rows: 1fr 10% 40% 35% 1fr;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
+  #grilla {
+    grid-template-rows: 1fr 10% 35% 35% 1fr;
+  }
   .lineas {
     width: 50px;
   }

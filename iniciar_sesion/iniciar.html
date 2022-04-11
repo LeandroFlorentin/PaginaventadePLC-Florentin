@@ -12,61 +12,64 @@
 </head>
 <body>
 	<div id="grilla">
-    <header class="header">
-	  	    <ul class="lineas">
-                <li><img class="botonsito" src="../img/boton/boton.png">
-                    <ul>
-    	                <li><a href="../index.html">INICIO</a></li>
-    	                <li><a href="../productos/productos.html " target="_BLANK">PRODUCTOS</a></li>
-    	                <li><a href="../sobre_nosotros/sobrenosotros.html" target="_BLANK">SOBRE NOSOTROS</a></li>
-    	                <li><a href="../contacto/contacto.html" target="_BLANK">CONTACTO</a></li>
-    	            </ul>
-    	        </li>
-            </ul>
-            <div class="icono">
-		    <img id="logo" class="header__logo" src="../img/iconos/omega.png">
-		    <h2 class="header__titulo">OMEGA</h2>
-        </div>
-		<nav class="navegador">
-		<h3 class="navegador__text"><a href="../iniciar_sesion/iniciar.html"><img src="../img/boton/iniciar-sesion.png"></a></h3>  
-    	</nav>
-    </header>
-	<div class="titulo">
-		<h1 class="titulo__h">Iniciar sesión</h1>
+			<header class="header">
+				<ul class="lineas">
+					<li><img class="botonsito" src="../img/boton/boton.png">
+						<ul>
+							<li><a href="../index.html">INICIO</a></li>
+							<li><a href="../productos/productos.html " target="_BLANK">PRODUCTOS</a></li>
+							<li><a href="../sobre_nosotros/sobrenosotros.html" target="_BLANK">SOBRE NOSOTROS</a></li>
+							<li><a href="../contacto/contacto.html" target="_BLANK">CONTACTO</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="icono">
+					<img id="logo" class="header__logo" src="../img/iconos/omega.png">
+					<h2 class="header__titulo">OMEGA</h2>
+				</div>
+				<nav class="navegador">
+				<h3 class="navegador__text"><a href="../iniciar_sesion/iniciar.html"><img src="../img/boton/iniciar-sesion.png"></a></h3>  
+				</nav>
+			</header>
+			<div class="titulo">
+				<h1 class="titulo__h">Iniciar sesión</h1>
+			</div>
+		<form class="completar">
+			<label class="completar__label" for="email">Email</label>
+			<input class="btn" type="text" name="email" placeholder="Email" required="">
+			<label class="completar__label" for="contraseña">Contraseña</label>
+			<input class="btn" type="password" name="contraseña" placeholder="Contraseña">
+			<input type="submit" placeholder="Iniciar sesión" class="boton_iniciar">
+			<a id="contraseña" href="#"><p>¿Has olvidado tu contraseña?</p></a>
+			<a id="registrate" href="#"><p>Registrate</p></a>
+		</form>
+		<footer class="pie">
+			<div class="texto_pie">
+				<h1 class="pie__h1">OMEGA</h1>
+				<p class="pie__p">Grupo de desarrollo OMEGA | Politicas de privacidad</p>
+				<p class="pie__p2">Contacto : EmpresaOMEGA@hotmail.com</p>
+			</div>
+			<div class="contacto">
+				<a href="https://facebook.com" target="_BLANK"><img class="redes__img" src="../img/pie/facebook.png"></a>
+				<a href="https://twitter.com" target="_BLANK"><img class="redes__img" src="../img/pie/twitter.png"></a>
+				<a href="https://instagram.com" target="_BLANK"><img class="redes__img" src="../img/pie/instagram.png"></a>
+				<a href="https://linkedin.com" target="_BLANK"><img class="redes__img" src="../img/pie/linkedin.png"></a>
+			</div>
+		</footer>
+		<div id="carouselExampleSlidesOnly" class="carousel slide ancho" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="../img/publicidad/publicidad.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="../img/publicidad/publicidad2.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="../img/publicidad/publicidad3.jpg" class="d-block w-100" alt="...">
+				</div>
+			</div>
+		</div>
+		<script src="../js/bootstrap.bundle.min.js"></script>
 	</div>
-	<form class="completar">
-		<label class="completar__label" for="email">Email</label>
-		<input class="btn" type="text" name="email" placeholder="Email" required="">
-		<label class="completar__label" for="contraseña">Contraseña</label>
-		<input class="btn" type="password" name="contraseña" placeholder="Contraseña">
-		<input type="submit" placeholder="Iniciar sesión" class="boton_iniciar">
-		<a id="contraseña" href="#"><p>¿Has olvidado tu contraseña?</p></a>
-		<a id="registrate" href="#"><p>Registrate</p></a>
-	</form>
-    <footer class="pie">
-     	    <p class="pie__p">Grupo de desarrollo OMEGA | Politicas de privacidad</p>
-        <div class="redes">
-     	    <a href="https://facebook.com" target="_BLANK"><img src="../img/pie/facebook.png"></a>
-     	    <a href="https://twitter.com" target="_BLANK"><img src="../img/pie/twitter.png"></a>
-     	    <a href="https://instagram.com" target="_BLANK"><img src="../img/pie/instagram.png"></a>
-     	    <a href="https://gmail.com" target="_BLANK"><img src="../img/pie/gmail.png"></a>
-     	    <a href="https://linkedin.com" target="_BLANK"><img src="../img/pie/linkedin.png"></a>
-        </div>
-    </footer>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../img/publicidad/publicidad.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="../img/publicidad/publicidad2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="../img/publicidad/publicidad3.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-    </div>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-</div>
 </body>
 </html>

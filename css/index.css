@@ -18,6 +18,15 @@ footer {
 .d-block{
   height: 300px;
 }
+.ancho{
+  width: 90%;
+  margin: auto;
+}
+.w-100{
+  border: 1px solid #000000;
+  border-radius: 50px;
+  box-shadow: 1px 2px 5px 0 #000;
+}
 #grilla {
   display: grid;
   grid-template-areas:
@@ -27,7 +36,7 @@ footer {
     "carro carro carro"
     "footer footer footer";
   grid-auto-columns: 1fr 30% 1fr;
-  grid-auto-rows: 1fr 40% 40% 30% 1fr;
+  grid-auto-rows: 1fr 30% 40% 30% 1fr;
 }
 .header {
   background: #000000;
@@ -184,14 +193,14 @@ ul li:hover ul li {
 .seccion__text {
   display: block;
   color: #333333;
-  font-size: 40px;
-  text-shadow: 1px 1px 2px #333333;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px #111111;
 }
 .seccion__p {
   color: #333333;
   display: block;
-  font-size: 25px;
-  text-shadow: 1px 1px 5px #cccccc;
+  font-size: 20px;
+  text-shadow: 1px 1px 5px #999999;
   width: 70%;
 }
 .seccion__imagen {
@@ -206,6 +215,22 @@ ul li:hover ul li {
   border-top: 2px solid #0c86f0;
   width: 100wh;
 }
+.pie__h1{
+  text-align: center;
+  background: linear-gradient(to bottom, #48f091, #0c86f0);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding-top: 10px;
+  font-size: 25px;
+}
+.pie__p2{
+  text-align: center;
+  background: linear-gradient(to bottom, #48f091, #0c86f0);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding-top: 10px;
+  font-size: 18px;
+}
 .pie__p {
   text-align: center;
   background: linear-gradient(to bottom, #48f091, #0c86f0);
@@ -214,7 +239,14 @@ ul li:hover ul li {
   padding-top: 10px;
   font-size: 18px;
 }
-.redes {
+.texto_pie{
+  display: block
+}
+.contacto{
+  display: block;
+  width: 100%;
+  float: right;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-around;
 }
